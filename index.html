@@ -8,6 +8,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Quicksand'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
 
 </head>
 
@@ -43,64 +45,101 @@
       
         <div class="row">
           <div class="col-md-6">
-            <div class="wrap">
+            <div class="wrap wrap-left">
               <form>
-                <label><span>Enter Zip Code or City:</span></label>
-                <input type="text" name="zipcode" placeholder="Does not have to be where you live">
-                <label><span>Choose a category</span>:</label>
-                <select>
-                  <option>Click to choose a legal category</option>
-                  <option>Family</option>
-                  <option>Criminal Defense</option>
-                  <option>Business</option>
-                  <option>Personal Injury</option>
-                  <option>Bankruptcy & Finances</option>
-                  <option>Products & Services</option>
-                  <option>Employment</option>
-                  <option>Real Estate</option>
-                  <option>Immigration</option>
-                  <option>Wills, Trusts & Estates</option>
-                  <option>Government</option>
-                  <option>Intellectual Property</option>
-                </select>
+                <div style="position: relative; width: 555px; margin-bottom: 10px;">
+                  <label><span>Enter Country name:</span></label>
+                  <div class="zzipcode">
+                    <div class="one">1</div>
+                    <input type="text" list="zipcode" placeholder="Does not have to be where you live">
+                    <datalist id="zipcode">
+                        <option value="Nowheresville, XX 00000"> </option>
+                        <option value="Morris, IL 60450"> </option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div style="position: relative; width: 555px;">
+                  <label><span>Choose a category:</span></label>
+                  <div class="two">2</div>
+                  <div class="sel sel--black-panther">  
+                    <select name="select-profession" id="select-profession">
+                      <option value="" disabled>Click to choose a legal category</option>
+                      <option value="family">Family</option>
+                      <option value="criminal-defense">Criminal Defense</option>
+                      <option value="business">Business</option>
+                      <option value="personal-inquiry">Personal Injury</option>
+                      <option value="bankruptcy">Bankruptcy & Finances</option>
+                      <option value="products-services">Products & Services</option>
+                      <option value="employment">Employment</option>
+                      <option value="real-estate">Real Estate</option>
+                      <option value="immigration">Immigration</option>
+                      <option value="wills-trusts-estates">Wills, Trusts & Estates</option>
+                      <option value="government">Government</option>
+                      <option value="intellectual-property">Intellectual Property</option>
+                    </select>
+                  </div>
+                </div>
               </form>
+
+              <!-- <a href="#myModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">Launch Demo Modal</a>
+               
+             
+              <div id="myModal" class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title">Confirmation</h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>Do you want to save changes you made to document before closing?</p>
+                              <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                      </div>
+                  </div>
+              </div> -->
             </div>
-            
-            <p>Can't find your category? <a href="">Click here.</a></p>
+            <p class="click-here">Can't find your category? <a href="">Click here.</a></p>
           </div>
+
           <div class="col-md-6">
-            <div class="wrap">
+            <div class="wrap wrap-right">
               <h3>Clients review LegalMatch lawyers</h3>
               <ul>
                 <li>
-                  <div>
-                    <img src="">
+                  <div class="lawyer-img">
+                    <img src="assets/images/img1.png">
                     <p><strong>Mitchell M.</strong> <br>Cherry Hill, NJ</p>
                   </div>
-                  <div>
-                    <h3>Family Law <star></h3>
+                  <div class="lawyer-info">
+                    <h4>Family Law</h4>
                     <p><i>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et ...</i></p>
                     <a class="read-review">Read Review</a>
                   </div>
                 </li>
                 <li>
-                  <div>
-                    <img src="">
+                  <div class="lawyer-img">
+                    <img src="assets/images/img2.png">
                     <p><strong>Joel C.</strong> <br>Little Rock, AK</p>
                   </div>
-                  <div>
-                    <h3>Job & Employment Law <star></h3>
+                  <div class="lawyer-info">
+                    <h4 class="h4-middle">Job & Employment Law</h4>
                     <p><i>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et ...</i></p>
                     <a class="read-review">Read Review</a>
                   </div>
                 </li>
                 <li>
-                  <div>
-                    <img src="">
+                  <div class="lawyer-img">
+                    <img src="assets/images/img3.png">
                     <p><strong>Brigida R.</strong> <br>Dallas, TX</p>
                   </div>
-                  <div>
-                    <h3>Family Law <star></h3>
+                  <div class="lawyer-info">
+                    <h4>Family Law</h4>
                     <p><i>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et ...</i></p>
                     <a class="read-review">Read Review</a>
                   </div>

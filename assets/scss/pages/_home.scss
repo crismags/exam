@@ -1,19 +1,107 @@
 .main-content-body {
 	background: url("../images/bg-glow.png")no-repeat #032c6b;
 	background-size: cover;
-	padding: 36px 0;
+	padding: 36px 0 50px;
 	position: relative;
 
 	h1, h2 { margin-bottom: 10px; }
-	h1 { font-size: 42px; font-family: 'Gotham-Light'; }
-	h2 { font-size: 30px; }
-
-	.wrap	form {
-		margin: 20px 0;
-		label { 
-			display: block; 
-			
-			> span { color: #fff; }
+	h1 { font-size: 42px; }
+	h2 { font-size: 30px; font-weight: bold; }
+	p.click-here { 
+		font-size: 18px; 
+		text-align: center; 
+		
+		a {
+			text-decoration: underline;
+			&:hover { color: #ddc04a; }
 		}
+	}
+
+	.wrap-left	{
+		margin: 40px 0;
+		form {
+			label { 
+				display: block; 
+				
+				> span { color: #fff; font-size: 18px; }
+			}
+		}
+	}
+
+	.wrap-right {
+		margin: 20px 0;
+
+		ul {
+			display: inline-block;
+			list-style: none;
+			margin-top: 20px;
+			padding: 0;
+			li {
+				border-bottom: 2px solid #497aa8;
+				display: inline-block;
+				padding: 21px 0 16px;
+				width: 100%;
+				
+				&:first-child { padding-top: 0; }
+				&:last-child { border-bottom: 0; }
+				.lawyer-img {
+					float: left;
+					margin: 0 auto;
+					text-align: center;
+					width: 20%;
+
+				}
+				.lawyer-info {
+					float: right;
+					width: 75%;
+
+					h4 {
+						font-size: 13px;
+						position: relative;
+						margin-top: 0; 
+						margin-bottom: 10px;
+						&.h4-middle:after { left: 42%; }
+
+						&:after {
+							background: url(../images/icon-star.png) no-repeat;
+							content: "\ ";
+							display: inline-block;
+							height: 16px;
+							width: 86px;
+							position: absolute;
+							top: 0;
+							left: 22%;
+						}
+					}
+					p { font-size: 12px; }
+					a { 
+						color: #dec24c; 
+						text-align: right; 
+						display: block; 
+						position: relative;
+						padding-right: 16px;
+						font-size: 10px;
+						font-weight: bold; 
+						&:hover { cursor: pointer; text-decoration: none; color: #fff; }
+
+						&:after {
+							background: url("../images/icon-book.png")no-repeat;
+							content: "\ ";
+							display: inline-block;
+							height: 10px;
+							width: 13px;
+							position: absolute;
+							right: 0;
+							top: 2px;
+						}
+					}
+					
+				}
+			}
+		}
+
+
+		
+
 	}
 }
