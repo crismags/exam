@@ -1,0 +1,28 @@
+.main-header {
+	header { display: block; padding: 21px 0; } 
+	
+	a img:hover { opacity: 0.8; }
+	
+	ul {
+		float: right;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			position: relative;
+			padding-left: 14px;
+			&:before {
+				background: url("../images/icon-check.jpg") no-repeat ;
+				content: "\ ";
+				display: inline-block;
+    		height: 11px;
+    		left: 0px;
+				position: absolute;
+				top: 4px;
+				width: 11px;
+			}
+		}
+	}
+
+}

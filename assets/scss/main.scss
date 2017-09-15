@@ -2,7 +2,8 @@
 
 /**
  * Remove/comment the package/s that you do not use.
- */
+*/
+
 // Core variables and mixins
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -53,18 +54,12 @@
 // Utility classes
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
-
-
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
-
-
 @import "../../bower_components/animate.css/animate.css";
 
 
 @import "common";
-@import "pages/author";
-@import "pages/blog";
-@import "pages/book";
-@import "pages/contact";
+@import "layout/header";
+@import "layout/banner";
+@import "layout/footer";
 @import "pages/home";
-@import "pages/order";

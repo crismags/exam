@@ -1,0 +1,39 @@
+.main-footer {
+	padding: 35px 0 50px;
+	a, p,{ color: #929ba4; }
+	
+	a img:hover { opacity: 0.8; }
+	.nav-wrap	{
+		.navbar-nav {
+	    width: 100%;
+	    text-align: center;
+	    > li {
+	      float: none;
+	      display: inline-block;
+	      position: relative;
+				&:last-child { &:after { display: none; }	}
+	      &:after {
+	      	border: 2px solid #929ba4;
+					content: "\ ";
+					position: absolute;
+					right: -4px;
+					top: 22px;	
+	      }
+				a {
+					background: none;
+					&:hover, &:active { background: none; color: #032c6b; }
+				}
+	    }
+	  }
+	  .copyright { text-align: center; }
+	}
+	
+	.partners {
+		float: right;
+		a {
+			display: block;
+			padding: 18px 0;
+			&:first-child, &:nth-child(2) { padding-top: 0 ;}
+		}
+	}
+}
